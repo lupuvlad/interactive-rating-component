@@ -8,8 +8,6 @@
   --clr-neutral-dark-blue: hsl(213, 19%, 18%);
   --clr-neutral-very-dark-blue: hsl(216, 12%, 8%);
   --fs-paragraph: 15px;
-  --ff-normal: 400px;
-  --ff-bold: 700px;
 }
 
 *,
@@ -40,4 +38,13 @@ img {
 
 button {
   font: inherit;
+}
+
+h3 {
+  font-weight: 700px;
+}
+
+p {
+  font-size: var(--fs-paragraph);
+  font-weight: 400px;
 }
