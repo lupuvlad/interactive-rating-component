@@ -65,7 +65,7 @@ body {
 .rating-card,
 .thank-you-card {
   background-color: var(--clr-neutral-dark-blue);
-  border-radius: 30px;
+  border-radius: 10px;
 }
 
 .star {
@@ -103,6 +103,7 @@ p {
   color: var(--clr-neutral-white);
   letter-spacing: 0.1rem;
   border-radius: 30px;
+  font-size: 13px;
 }
 
 .submit:active {
@@ -127,6 +128,46 @@ p > .select {
   color: var(--clr-primary);
 }
 
+/* ------ MOBILE FIRST ------ */
+
 /* Utilities */
 
-/* ------ MOBILE FIRST ------ */
+.thank-you-card {
+  display: none;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid {
+  display: grid;
+  align-items: center;
+  gap: 1rem;
+}
+
+.margin-xy {
+  margin: auto 1rem auto 1rem;
+}
+
+.padding-wrapper {
+  padding: 1.5rem;
+}
+
+.padding-inside-elements-1 {
+  padding: 1rem;
+}
+
+.padding-inside-elements-06 {
+  padding: 0.6rem;
+}
+
+/* Individual */
+
+.rating {
+  display: flex;
+  justify-content: space-between;
+}
