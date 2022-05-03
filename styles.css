@@ -5,6 +5,8 @@
   --clr-neutral-white: hsl(0, 0%, 100%);
   --clr-neutral-light-grey: hsl(217, 12%, 63%);
   --clr-neutral-medium-grey: hsl(216, 12%, 54%);
+  --clr-neutral-border-grey: hsla(220, 2%, 34%, 0.356);
+  --clr-neutral-border-star-grey: hsla(220, 2%, 34%, 0.258);
   --clr-neutral-dark-blue: hsl(213, 19%, 18%);
   --clr-neutral-very-dark-blue: hsl(216, 12%, 8%);
   --fs-paragraph: 15px;
@@ -38,7 +40,12 @@ img {
 
 button {
   font: inherit;
+  cursor: pointer;
+  background: none;
+  border: none;
 }
+
+/* Fonts */
 
 h3 {
   font-weight: 700px;
@@ -48,3 +55,78 @@ p {
   font-size: var(--fs-paragraph);
   font-weight: 400px;
 }
+
+/* Styles */
+
+body {
+  background-color: var(--clr-neutral-very-dark-blue);
+}
+
+.rating-card,
+.thank-you-card {
+  background-color: var(--clr-neutral-dark-blue);
+  border-radius: 30px;
+}
+
+.star {
+  background-color: var(--clr-neutral-border-star-grey);
+  border-radius: 50%;
+}
+
+h3 {
+  letter-spacing: 0.1rem;
+  color: var(--clr-neutral-white);
+}
+
+p {
+  color: var(--clr-neutral-medium-grey);
+}
+
+.rating-numbers {
+  color: var(--clr-neutral-medium-grey);
+  background-color: var(--clr-neutral-border-grey);
+  border-radius: 50%;
+  font-size: 12px;
+}
+
+.rating-numbers:hover {
+  background-color: var(--clr-neutral-light-grey);
+  color: var(--clr-neutral-white);
+}
+
+.rating-numbers:active {
+  background-color: var(--clr-primary);
+}
+
+.submit {
+  background-color: var(--clr-primary);
+  color: var(--clr-neutral-white);
+  letter-spacing: 0.1rem;
+  border-radius: 30px;
+}
+
+.submit:active {
+  color: var(--clr-primary);
+  background-color: var(--clr-neutral-white);
+}
+
+p > .select {
+  color: var(--clr-primary);
+  background-color: var(--clr-neutral-border-grey);
+  border-radius: 30px;
+}
+
+.attribution {
+  font-size: 11px;
+  color: var(--clr-neutral-medium-grey);
+  text-align: center;
+}
+
+.attribution a {
+  text-decoration: none;
+  color: var(--clr-primary);
+}
+
+/* Utilities */
+
+/* ------ MOBILE FIRST ------ */
