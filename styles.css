@@ -9,7 +9,7 @@
   --clr-neutral-border-star-grey: hsla(220, 2%, 34%, 0.258);
   --clr-neutral-dark-blue: hsl(213, 19%, 18%);
   --clr-neutral-very-dark-blue: hsl(216, 12%, 8%);
-  --fs-paragraph: 15px;
+  --fs-paragraph: 0.9375rem;
   --fw-bold: bold;
 }
 
@@ -54,7 +54,7 @@ h3 {
 
 p {
   font-size: var(--fs-paragraph);
-  font-weight: 400px;
+  font-weight: normal;
 }
 
 /* Styles */
@@ -66,7 +66,8 @@ body {
 .rating-card,
 .thank-you-card {
   background-color: var(--clr-neutral-dark-blue);
-  border-radius: 10px;
+  border-radius: 0.625rem;
+  max-width: 24rem;
 }
 
 .star {
@@ -74,9 +75,14 @@ body {
   border-radius: 50%;
 }
 
+h2,
 h3 {
   letter-spacing: 0.1rem;
   color: var(--clr-neutral-white);
+}
+
+h2 {
+  margin-top: 0.3rem;
 }
 
 p {
@@ -86,10 +92,10 @@ p {
 .rating-numbers {
   color: var(--clr-neutral-medium-grey);
   background-color: var(--clr-neutral-border-grey);
-  width: 2.5rem;
-  height: 2.5rem;
+  width: 2.7rem;
+  height: 2.7rem;
   border-radius: 50%;
-  font-size: 12px;
+  font-size: 0.75rem;
   font-weight: var(--fw-bold);
 }
 
@@ -106,8 +112,8 @@ p {
   background-color: var(--clr-primary);
   color: var(--clr-neutral-white);
   letter-spacing: 0.1rem;
-  border-radius: 30px;
-  font-size: 13px;
+  border-radius: 1.875rem;
+  font-size: 0.8rem;
   margin-bottom: 0.2rem;
   display: inline-block;
 }
@@ -120,12 +126,12 @@ p {
 .select {
   color: var(--clr-primary);
   background-color: var(--clr-neutral-border-grey);
-  border-radius: 20px;
+  border-radius: 1.25rem;
   padding: 0.4rem 0.8rem;
 }
 
 .attribution {
-  font-size: 11px;
+  font-size: 0.7rem;
   color: var(--clr-neutral-medium-grey);
   text-align: center;
 }
@@ -187,10 +193,6 @@ p {
   padding: 0.8rem;
 }
 
-.padding-inside-elements-07 {
-  padding: 0.7rem;
-}
-
 /* Individual */
 
 .rating {
@@ -201,6 +203,36 @@ p {
 }
 
 .illustration {
-  width: 150px;
-  height: 100px;
+  width: 9.375rem;
+  height: 6.25rem;
+}
+
+/* Media queries */
+
+@media screen and (min-width: 1440px) {
+  .rating-card,
+  .thank-you-card {
+    padding: 0.2rem;
+    border-radius: 1.25rem;
+  }
+
+  .star {
+    padding: 1rem;
+  }
+
+  h2,
+  h3 {
+    margin-top: 0.8rem;
+  }
+
+  .rating-numbers {
+    width: 3rem;
+    height: 3rem;
+    font-size: var(--fs-paragraph);
+  }
+
+  .submit {
+    margin-top: 0.3rem;
+    padding: 0.6rem;
+  }
 }
